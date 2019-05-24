@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <button id="flip-left" style="float:left;margin-left:20px;"><--</button>
+    <button id="flip-right" style="float:right;margin-right:20px;">--></button>
+    <div id="wizard-input">
+      <!-- <input type="number" min="1235" value="1235" onclick="this.select()" id="wizard-input-id">
+			<button id="wizard-submit">Find</button> -->
+      <form name="wizard-submit">
+        <input
+          type="number"
+          name="wizard_value"
+          min="1235"
+          value="1235"
+          id="wizard-input-id"
+        />
+        <input
+          type="button"
+          value="Find Wizard"
+          onclick="updateWizardValue(this.form)"
+          id="wizard-input-submit"
+        />
+      </form>
+    </div>
+    <div id="book">
+      <canvas id="pageflip-canvas"></canvas>
+      <div id="pages">
+        <section id="main-section">
+          <div>
+            <h1>Cheeze Wizard Catalog</h1>
+            <img src="utters.png" />
+          </div>
+        </section>
+      </div>
+    </div>
+    <script type="text/javascript" src="page_flip.js"></script>
+  </body>
+</html>

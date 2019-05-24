@@ -1,0 +1,110 @@
+html,
+body {
+  background: lightgoldenrodyellow;
+}
+
+body,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #444;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  background-image: url("cheese.jpg");
+
+  -webkit-box-shadow: 1px 11px 28px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 11px 28px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 11px 28px -12px rgba(0, 0, 0, 0.75);
+}
+
+#wizard-input {
+  margin-left: 45%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#wizard-input form #wizard-input-id {
+  border-radius: 28px;
+  text-align: center;
+}
+
+#book {
+  background: url("book.png") no-repeat;
+  position: absolute;
+  background-size: 100% auto;
+  width: 100vw;
+  height: calc(100vw * 0.31325301204);
+  margin-top: 12.5vh;
+
+  -webkit-box-shadow: 1px 14px 28px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 14px 28px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 14px 28px 2px rgba(0, 0, 0, 0.75);
+}
+
+#pages section {
+  background: url("paper.png") no-repeat;
+  display: block;
+  background-size: 100% auto;
+  width: calc(100vw * 0.48192771084);
+  height: calc(100vw * 0.2793650793);
+  position: absolute;
+  left: calc(100vw * 0.5);
+  top: calc(100vw * 0.00602409638);
+  overflow: hidden;
+}
+
+.wizard-shadow {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  /* Similar syntax to box-shadow */
+}
+#pages section > div {
+  display: block;
+  width: calc(100vw * 0.48192771084);
+  height: calc(100vw * 0.2793650793);
+  font-size: calc(100vw * 0.013);
+}
+#pages section p,
+#pages section h2 {
+  padding-left: calc(100vw * 0.00361445783);
+  padding-top: calc(100vw * 0.04216867469);
+  line-height: 1.4em;
+  text-align: justify;
+}
+#pages section h2 {
+  margin-left: calc(100vw * 0.01807228915);
+  margin-right: calc(100vw * 0.01204819277);
+}
+
+#pageflip-canvas {
+  position: absolute;
+  z-index: 100;
+}
+
+.wizard img {
+  width: 40%;
+  margin-left: 25%;
+}
+
+.wizard div {
+  margin-left: 42.5%;
+  width: 50px;
+}
+
+#main-section div h1 {
+  margin-left: 24% !important;
+}
+
+#main-section div img {
+  margin-left: 19.5% !important;
+  margin-top: 5% !important;
+  width: 50% !important;
+}
+
+.hidden {
+  display: none;
+}

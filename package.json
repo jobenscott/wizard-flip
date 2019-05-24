@@ -1,0 +1,22 @@
+{
+  "name": "hashtraitguess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "page_flip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobenscott/wizard-flip.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jobenscott/wizard-flip/issues"
+  },
+  "homepage": "https://github.com/jobenscott/wizard-flip#readme",
+  "dependencies": {
+    "abi-decoder": "^1.2.0"
+  }
+}
